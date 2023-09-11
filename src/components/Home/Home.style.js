@@ -10,13 +10,39 @@ const style = StyleSheet.create({
   },
 
   titleText: {
-    fontSize: SIZES.large,
+    fontSize: SIZES.xLarge,
     color: COLORS.darkestGray,
   },
 
   titleLogo: {
     width: 100,
     height: 100,
+  },
+
+  subtitleContainer: {
+    width: '100%',
+    padding: 10,
+    borderRadius: 10,
+    marginBottom: 10,
+    alignItems: 'center',
+    backgroundColor: COLORS.gray,
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
+
+  subtitleText: {
+    fontSize: SIZES.large,
+    color: COLORS.darkestGray,
+  },
+
+  paragraphContainer: {
+    width: '100%',
+    padding: 10,
+    marginBottom: 25,
+  },
+
+  icon: {
+    marginRight: 10,
   },
 });
 

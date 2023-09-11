@@ -1,3 +1,7 @@
 import Home from './Home/Home';
+import Rules from './Home/Rules/Rules';
 
-export default Home;
+export {
+  Home,
+  Rules,
+};

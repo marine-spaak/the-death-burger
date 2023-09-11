@@ -19,8 +19,11 @@ module.exports = {
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/jsx-filename-extension': 'off',
+    'react/no-unescaped-entities': 'warn',
     'no-unused-vars': 'warn',
     'import/prefer-default-export': 'warn',
+    'import/no-useless-path-segments': 'warn',
+    'import/no-cycle': 'warn',
     'arrow-body-style': 'warn',
   },
 };

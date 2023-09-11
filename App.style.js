@@ -6,6 +6,7 @@ const style = StyleSheet.create({
 
   appContainer: {
     backgroundColor: COLORS.white,
+    padding: 20,
   },
 
 });
