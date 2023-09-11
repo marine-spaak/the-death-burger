@@ -1,9 +1,9 @@
 {
   "expoServerPort": null,
-  "packagerPort": 19000,
-  "expoServerNgrokUrl": "https://9b-ret.marine-spaak.the-death-burger.exp.direct",
-  "packagerNgrokUrl": "https://9b-ret.marine-spaak.the-death-burger.exp.direct",
-  "ngrokPid": 36874,
+  "packagerPort": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
   "packagerPid": null,
   "webpackServerPort": null
 }
