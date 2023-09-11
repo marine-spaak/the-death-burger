@@ -1,12 +1,7 @@
-import { View } from 'react-native';
-import style from './App.style';
-
-import { Home } from './src/components';
+import Home from './src/components';
 
 const App = () => (
-  <View style={style.appContainer}>
-    <Home />
-  </View>
+  <Home />
 );
 
 export default App;

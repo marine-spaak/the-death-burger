@@ -21,5 +21,6 @@ module.exports = {
     'react/jsx-filename-extension': 'off',
     'no-unused-vars': 'warn',
     'import/prefer-default-export': 'warn',
+    'arrow-body-style': 'warn',
   },
 };
