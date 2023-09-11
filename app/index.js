@@ -4,13 +4,10 @@
 import { SafeAreaView } from 'react-native';
 import App from '../App';
 
-const index = () => {
-
-  return (
-    <SafeAreaView>
-      <App />
-    </SafeAreaView>
-  )
-}
+const index = () => (
+  <SafeAreaView>
+    <App />
+  </SafeAreaView>
+);
 
 export default index;
