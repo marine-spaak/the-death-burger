@@ -1,8 +1,11 @@
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import style from './App.style';
+
+import { Home } from './src/components';
 
 const App = () => (
-  <View>
-    <Text>Mon app</Text>
+  <View style={style.appContainer}>
+    <Home />
   </View>
 );
 
