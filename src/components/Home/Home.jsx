@@ -2,7 +2,7 @@ import { View, Text, Image } from 'react-native';
 import style from './Home.style'; // Je garde le style de Home pour l'utiliser dans chaque sous-partie
 import { images, COLORS, SIZES } from '../../constants';
 
-import { Rules } from '../../components';
+import { Rules, Play, Others, Alain } from '../../components';
 
 const Home = () => (
   <View>
@@ -15,6 +15,9 @@ const Home = () => (
     </View>
 
     <Rules />
+    <Play />
+    <Others />
+    <Alain />
   </View>
 );
 

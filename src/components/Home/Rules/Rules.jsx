@@ -10,7 +10,7 @@ const Rules = () => (
       <Ionicons
         name="list"
         size={32}
-        color={COLORS.darkBlue}
+        color={COLORS.lightRed}
         style={style.icon}
       />
       <Text style={style.subtitleText}>Règles du jeu</Text>
