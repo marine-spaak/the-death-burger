@@ -1,14 +1,14 @@
-// Le fichier app > index.js est le second point d'entrée
-// On pose une SafeAreaView et dedans on va mettre notre composant App.js
 import { SafeAreaView, ScrollView } from 'react-native';
-import { Stack } from 'expo-router';
+import { Stack, useRouter } from 'expo-router';
 
-import App from '../App';
 import { HeaderLeft, HeaderRight } from '../src/components';
+
+import Questions from '../src/components/Questions/Questions';
 import { COLORS } from '../src/constants';
 
-const index = () => {
-  const backFunction = () => {};
+const question = () => {
+  const router = useRouter();
+  const backFunction = () => { router.back(); };
 
   return (
     <SafeAreaView>
@@ -26,10 +26,10 @@ const index = () => {
       />
 
       <ScrollView>
-        <App />
+        <Questions />
       </ScrollView>
     </SafeAreaView>
   );
 };
 
-export default index;
+export default question;

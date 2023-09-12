@@ -1,4 +1,6 @@
 import { View, Text, TouchableOpacity } from 'react-native';
+import { Link } from 'expo-router';
+
 import { Ionicons } from '@expo/vector-icons';
 import { images, COLORS, SIZES } from '../../../constants';
 
@@ -23,16 +25,14 @@ const Play = () => (
         Alors allez-y !
       </Text>
 
-      <TouchableOpacity
-        onPress={() => {}}
-      >
+      <Link href="/question" style={specificStyle.playBtnContainer}>
         <Ionicons
           name="play-circle"
           size={70}
           color={COLORS.darkYellow}
           style={specificStyle.playBtn}
         />
-      </TouchableOpacity>
+      </Link>
     </View>
   </View>
 );
