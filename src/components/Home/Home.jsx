@@ -1,4 +1,4 @@
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, Button } from 'react-native';
 import style from './Home.style'; // Je garde le style de Home pour l'utiliser dans chaque sous-partie
 import { images, COLORS, SIZES } from '../../constants';
 
@@ -18,6 +18,8 @@ const Home = () => (
     <Play />
     <Others />
     <Alain />
+
+    <Button title="test" href="/test" />
   </View>
 );
 
