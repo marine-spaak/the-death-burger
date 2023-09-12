@@ -1,4 +1,5 @@
 import { View, Text } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { images, COLORS, SIZES } from '../../../constants';
@@ -8,12 +9,12 @@ import specificStyle from './CurrentQuestion.style';
 
 import questionsData from '../../../assets/data/questionsData';
 
-const CurrentQuestion = () => (
+const CurrentQuestion = ({ currentQuestionId }) => (
   <View>
     <View style={specificStyle.subtitleContainer}>
       <Text style={style.subtitleText}>Question numéro</Text>
       <MaterialCommunityIcons
-        name="numeric-1"
+        name={`numeric-${currentQuestionId + 1}`}
         size={50}
         color={COLORS.lightYellow}
       />
@@ -29,10 +30,14 @@ const CurrentQuestion = () => (
 
     <View style={specificStyle.questionContainer}>
       <Text style={specificStyle.questionText}>
-        {questionsData[0].text}
+        {questionsData[currentQuestionId].text}
       </Text>
     </View>
   </View>
 );
+
+CurrentQuestion.propTypes = {
+  currentQuestionId: PropTypes.number.isRequired,
+};
 
 export default CurrentQuestion;

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   View, Text, Image, TouchableOpacity,
 } from 'react-native';
@@ -10,6 +11,12 @@ import { ProgressBar, CurrentQuestion } from '..';
 
 const Questions = () => {
   const router = useRouter();
+  const [currentQuestionId, setCurrentQuestionId] = useState(0);
+  const handlePressOnNextBtn = () => {
+    if (currentQuestionId < 9) {
+      setCurrentQuestionId(currentQuestionId + 1);
+    }
+  };
 
   return (
     <View>
@@ -21,12 +28,16 @@ const Questions = () => {
         <Text style={style.titleText}>Le Burger de la Mort</Text>
       </View>
 
-      <ProgressBar />
+      <ProgressBar
+        currentQuestionId={currentQuestionId}
+      />
 
-      <CurrentQuestion />
+      <CurrentQuestion
+        currentQuestionId={currentQuestionId}
+      />
 
       <TouchableOpacity
-        onPress={() => {}}
+        onPress={handlePressOnNextBtn}
         style={style.btnContainer}
       >
         <Text style={style.nextBtn}>Question suivante</Text>

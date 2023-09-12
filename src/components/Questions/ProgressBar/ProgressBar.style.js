@@ -11,7 +11,7 @@ const style = StyleSheet.create({
   },
 
   progressBarFiller: {
-    width: '50%',
+    width: '100%',
     height: 10,
     backgroundColor: COLORS.darkYellow,
   },
