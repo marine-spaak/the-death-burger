@@ -23,7 +23,6 @@ const Home = () => (
     <Others />
     <Alain />
 
-    <Link href="/test">Test</Link>
   </View>
 );
 

@@ -4,7 +4,7 @@
 import { SafeAreaView, ScrollView } from 'react-native';
 import App from '../App';
 
-const Index = () => (
+const index = () => (
   <SafeAreaView>
     <ScrollView>
       <App />
@@ -12,4 +12,4 @@ const Index = () => (
   </SafeAreaView>
 );
 
-export default Index;
+export default index;

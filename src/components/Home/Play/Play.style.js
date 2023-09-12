@@ -3,8 +3,11 @@ import { StyleSheet } from 'react-native';
 import { COLORS, SIZES } from '../../../constants';
 
 const style = StyleSheet.create({
+  playBtnContainer: {
+    textAlign: 'center',
+  },
+
   playBtn: {
-    alignSelf: 'center',
     marginTop: 5,
     marginBottom: -20,
   },
