@@ -2,6 +2,7 @@ import {
   View, Text, Image, TouchableOpacity, FlatList,
 } from 'react-native';
 import { useRouter } from 'expo-router';
+import PropTypes from 'prop-types';
 
 import { Answer } from '..';
 import answersData from '../../assets/data/answersData';
@@ -10,7 +11,7 @@ import style from '../Questions/Questions.style';
 import specificStyle from './Answers.style';
 import { images } from '../../constants';
 
-const Questions = () => {
+const Answers = ({ answersArray, setAnswersArray, setGameStep }) => {
   const router = useRouter();
 
   return (
@@ -30,12 +31,14 @@ const Questions = () => {
           <Answer
             id={item.id}
             answerColor={item.answerColor}
+            setAnswersArray={setAnswersArray}
+            answersArray={answersArray}
           />
         )}
       />
 
       <TouchableOpacity
-        onPress={() => {}}
+        onPress={() => { setGameStep('correction'); }}
         style={style.btnContainer}
       >
         <Text style={style.nextBtn}>Valider</Text>
@@ -45,4 +48,10 @@ const Questions = () => {
   );
 };
 
-export default Questions;
+Answers.propTypes = {
+  answersArray: PropTypes.array.isRequired,
+  setAnswersArray: PropTypes.func.isRequired,
+  setGameStep: PropTypes.func.isRequired,
+};
+
+export default Answers;

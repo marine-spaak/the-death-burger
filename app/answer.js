@@ -1,14 +1,18 @@
 import { SafeAreaView, ScrollView } from 'react-native';
 import { Stack, useRouter } from 'expo-router';
+import { useState } from 'react';
 
-import { HeaderLeft, HeaderRight } from '../src/components';
+import {
+  HeaderLeft, HeaderRight, Answers, Correction,
+} from '../src/components';
 
-import Answers from '../src/components/Answers/Answers';
 import { COLORS } from '../src/constants';
 
 const answer = () => {
   const router = useRouter();
   const backFunction = () => { router.back(); };
+  const [gameStep, setGameStep] = useState('');
+  const [answersArray, setAnswersArray] = useState(['', '', '', '', '', '', '', '', '', '']);
 
   return (
     <SafeAreaView>
@@ -26,7 +30,28 @@ const answer = () => {
       />
 
       <ScrollView>
-        <Answers />
+        {/* Si on est à l'étape basique de montrer les réponses */}
+        {(gameStep === '') && (
+          <Answers
+            answersArray={answersArray}
+            setAnswersArray={setAnswersArray}
+            setGameStep={setGameStep}
+          />
+        )}
+
+        {/* Si on est à la correction */}
+        {(gameStep === 'correction') && (
+          <Correction
+            answersArray={answersArray}
+            setGameStep={setGameStep}
+          />
+        )}
+
+        {/* Si on est au résultat */}
+        {/* {(gameStep === 'result') && (
+          <Result />
+        )} */}
+
       </ScrollView>
     </SafeAreaView>
   );

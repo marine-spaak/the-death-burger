@@ -10,6 +10,7 @@ import ProgressBar from './Questions/ProgressBar/ProgressBar';
 import CurrentQuestion from './Questions/CurrentQuestion/CurrentQuestion';
 import Answers from './Answers/Answers';
 import Answer from './Answers/Answer/Answer';
+import Correction from './Correction/Correction';
 
 export {
   Home,
@@ -24,4 +25,5 @@ export {
   CurrentQuestion,
   Answers,
   Answer,
+  Correction,
 };
