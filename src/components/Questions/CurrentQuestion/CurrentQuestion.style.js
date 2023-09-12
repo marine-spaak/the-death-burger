@@ -12,6 +12,16 @@ const style = StyleSheet.create({
     justifyContent: 'center',
     flexDirection: 'row',
   },
+
+  questionContainer: {
+    alignItems: 'center',
+  },
+
+  questionText: {
+    maxWidth: '90%',
+    fontSize: SIZES.medium,
+    textAlign: 'center',
+  },
 });
 
 export default style;
