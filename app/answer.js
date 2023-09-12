@@ -3,7 +3,7 @@ import { Stack, useRouter } from 'expo-router';
 import { useState } from 'react';
 
 import {
-  HeaderLeft, HeaderRight, Answers, Correction,
+  HeaderLeft, HeaderRight, Answers, Correction, Result,
 } from '../src/components';
 
 import { COLORS } from '../src/constants';
@@ -13,6 +13,8 @@ const answer = () => {
   const backFunction = () => { router.back(); };
   const [gameStep, setGameStep] = useState('');
   const [answersArray, setAnswersArray] = useState(['', '', '', '', '', '', '', '', '', '']);
+  const [counterOfRightAnswers, setCounterOfRightAnswers] = useState(0);
+  const counterPlusOne = () => setCounterOfRightAnswers(counterOfRightAnswers + 1);
 
   return (
     <SafeAreaView>
@@ -44,13 +46,16 @@ const answer = () => {
           <Correction
             answersArray={answersArray}
             setGameStep={setGameStep}
+            counterPlusOne={counterPlusOne}
           />
         )}
 
         {/* Si on est au résultat */}
-        {/* {(gameStep === 'result') && (
-          <Result />
-        )} */}
+        {(gameStep === 'result') && (
+          <Result
+            counterOfRightAnswers={counterOfRightAnswers}
+          />
+        )}
 
       </ScrollView>
     </SafeAreaView>

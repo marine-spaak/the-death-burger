@@ -11,6 +11,7 @@ import CurrentQuestion from './Questions/CurrentQuestion/CurrentQuestion';
 import Answers from './Answers/Answers';
 import Answer from './Answers/Answer/Answer';
 import Correction from './Correction/Correction';
+import Result from './Result/Result';
 
 export {
   Home,
@@ -26,4 +27,5 @@ export {
   Answers,
   Answer,
   Correction,
+  Result,
 };
