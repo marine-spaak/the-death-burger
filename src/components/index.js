@@ -8,6 +8,8 @@ import HeaderLeft from './Header/HeaderLeft/HeaderLeft';
 import HeaderRight from './Header/HeaderRight/HeaderRight';
 import ProgressBar from './Questions/ProgressBar/ProgressBar';
 import CurrentQuestion from './Questions/CurrentQuestion/CurrentQuestion';
+import Answers from './Answers/Answers';
+import Answer from './Answers/Answer/Answer';
 
 export {
   Home,
@@ -20,4 +22,6 @@ export {
   HeaderRight,
   ProgressBar,
   CurrentQuestion,
+  Answers,
+  Answer,
 };

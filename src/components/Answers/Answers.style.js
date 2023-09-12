@@ -8,8 +8,14 @@ const style = StyleSheet.create({
     alignItems: 'center',
   },
 
+  eachAnswerContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
+
   input: {
-    width: '90%',
+    width: '75%',
     padding: 5,
     fontSize: SIZES.medium,
     backgroundColor: COLORS.darkestGray,
