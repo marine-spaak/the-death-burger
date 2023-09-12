@@ -6,6 +6,8 @@ import { Link, useRouter } from 'expo-router';
 import style from './Questions.style';
 import { images, COLORS, SIZES } from '../../constants';
 
+import { ProgressBar, CurrentQuestion } from '..';
+
 const Questions = () => {
   const router = useRouter();
 
@@ -18,6 +20,10 @@ const Questions = () => {
         />
         <Text style={style.titleText}>Les Questions</Text>
       </View>
+
+      <ProgressBar />
+
+      <CurrentQuestion />
 
       <TouchableOpacity
         onPress={() => router.back()}
