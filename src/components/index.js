@@ -6,6 +6,8 @@ import Alain from './Home/Alain/Alain';
 import OthersCard from './Home/Others/OthersCard/OthersCard';
 import HeaderLeft from './Header/HeaderLeft/HeaderLeft';
 import HeaderRight from './Header/HeaderRight/HeaderRight';
+import ProgressBar from './Questions/ProgressBar/ProgressBar';
+import CurrentQuestion from './Questions/CurrentQuestion/CurrentQuestion';
 
 export {
   Home,
@@ -16,4 +18,6 @@ export {
   OthersCard,
   HeaderLeft,
   HeaderRight,
+  ProgressBar,
+  CurrentQuestion,
 };
