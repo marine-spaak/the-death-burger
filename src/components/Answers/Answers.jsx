@@ -1,16 +1,17 @@
 import {
-  View, Text, Image, TouchableOpacity,
+  View, Text, Image, TouchableOpacity, TextInput,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 
 import style from '../Questions/Questions.style';
+import specificStyle from './Answers.style';
 import { images, COLORS, SIZES } from '../../constants';
 
 const Questions = () => {
   const router = useRouter();
 
   return (
-    <View>
+    <View style={specificStyle.answersContainer}>
       <View style={style.titleContainer}>
         <Image
           source={images.logo}
@@ -18,6 +19,14 @@ const Questions = () => {
         />
         <Text style={style.titleText}>Les Réponses de la Mort</Text>
       </View>
+
+      <TextInput
+        style={specificStyle.input}
+        onChangeText={() => {}}
+        value=""
+        placeholder="Votre réponse"
+        placeholderTextColor={COLORS.gray}
+      />
 
       <TouchableOpacity
         onPress={() => {}}
