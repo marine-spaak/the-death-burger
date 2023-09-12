@@ -18,6 +18,10 @@ const Questions = () => {
     }
   };
 
+  const handlePressOnAnswersBtn = () => {
+    router.push('/answer');
+  };
+
   return (
     <View>
       <View style={style.titleContainer}>
@@ -36,12 +40,23 @@ const Questions = () => {
         currentQuestionId={currentQuestionId}
       />
 
-      <TouchableOpacity
-        onPress={handlePressOnNextBtn}
-        style={style.btnContainer}
-      >
-        <Text style={style.nextBtn}>Question suivante</Text>
-      </TouchableOpacity>
+      {(currentQuestionId < 9) && (
+        <TouchableOpacity
+          onPress={handlePressOnNextBtn}
+          style={style.btnContainer}
+        >
+          <Text style={style.nextBtn}>Question suivante</Text>
+        </TouchableOpacity>
+      )}
+
+      {(currentQuestionId >= 9) && (
+        <TouchableOpacity
+          onPress={handlePressOnAnswersBtn}
+          style={style.btnContainer}
+        >
+          <Text style={style.answerBtn}>C'est à vous !</Text>
+        </TouchableOpacity>
+      )}
 
     </View>
   );
