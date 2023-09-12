@@ -19,6 +19,7 @@ module.exports = {
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/jsx-filename-extension': 'off',
+    'react/jsx-boolean-value': 'warn',
     'react/no-unescaped-entities': 'warn',
     'react/forbid-prop-types': 'warn',
     'no-unused-vars': 'warn',
