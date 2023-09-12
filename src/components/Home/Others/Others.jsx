@@ -23,21 +23,22 @@ const Others = () => (
 
     <View style={style.paragraphContainer}>
       <Text>
-        Voici une liste des autres épreuves.
+        Y a pas que le burger de la mort, dans la vie...
       </Text>
 
-      {/* <FlatList
+      <FlatList
         data={othersData}
         renderItem={({ item }) => (
           <TouchableOpacity>
-            <Text>{item.title}</Text>
+            <OthersCard
+              title={item.title}
+              content={item.content}
+              imageSrc={item.imageSrc}
+            />
           </TouchableOpacity>
         )}
-
-      /> */}
-
-      <OthersCard />
-      <OthersCard />
+        horizontal // Il suffit de ça pour passer la liste à l'horizontale
+      />
     </View>
   </View>
 );
