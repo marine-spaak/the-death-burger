@@ -1,8 +1,12 @@
 import { View, Text, Image } from 'react-native';
+import { Link } from 'expo-router';
+
 import style from './Home.style'; // Je garde le style de Home pour l'utiliser dans chaque sous-partie
 import { images, COLORS, SIZES } from '../../constants';
 
-import { Rules, Play, Others, Alain } from '../../components';
+import {
+  Rules, Play, Others, Alain,
+} from '../../components';
 
 const Home = () => (
   <View>
@@ -18,6 +22,8 @@ const Home = () => (
     <Play />
     <Others />
     <Alain />
+
+    <Link href="/test">Test</Link>
   </View>
 );
 
