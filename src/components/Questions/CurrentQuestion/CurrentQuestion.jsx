@@ -5,7 +5,15 @@ import style from '../Questions.style';
 
 const CurrentQuestion = () => (
   <View>
-    <Text>Question actuelle</Text>
+    <View style={style.subtitleContainer}>
+      <Text style={style.subtitleText}>Question numéro X</Text>
+    </View>
+
+    <View style={style.paragraphContainer}>
+      <Text>
+        Voici la question courante.
+      </Text>
+    </View>
   </View>
 );
 

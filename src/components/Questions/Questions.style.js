@@ -5,7 +5,7 @@ import { COLORS, SIZES } from '../../constants';
 const style = StyleSheet.create({
   titleContainer: {
     width: '100%',
-    marginBottom: 25,
+    marginBottom: 10,
     alignItems: 'center',
   },
 
@@ -23,6 +23,7 @@ const style = StyleSheet.create({
   backBtnContainer: {
     flex: 1,
     alignItems: 'center',
+    marginTop: 15,
   },
 
   backBtn: {
@@ -31,6 +32,26 @@ const style = StyleSheet.create({
     backgroundColor: COLORS.darkBlue,
     color: COLORS.lightBlue,
     padding: 10,
+    marginTop: 15,
+  },
+
+  subtitleContainer: {
+    padding: 10,
+    borderRadius: 10,
+    margin: 20,
+    alignItems: 'center',
+    backgroundColor: COLORS.gray,
+  },
+
+  subtitleText: {
+    fontSize: SIZES.large,
+    color: COLORS.darkestGray,
+  },
+
+  paragraphContainer: {
+    width: '100%',
+    padding: 10,
+    alignItems: 'center',
   },
 });
 
