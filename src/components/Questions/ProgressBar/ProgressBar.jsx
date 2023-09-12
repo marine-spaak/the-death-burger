@@ -6,9 +6,9 @@ import specificStyle from '../ProgressBar/ProgressBar.style';
 
 const ProgressBar = () => (
   <View>
-    <View style={style.subtitleContainer}>
+    {/* <View style={style.subtitleContainer}>
       <Text style={style.subtitleText}>Progression</Text>
-    </View>
+    </View> */}
 
     <View style={style.paragraphContainer}>
       <View style={specificStyle.progressBarContainer}>

@@ -4,6 +4,7 @@ import { COLORS, SIZES } from '../../../constants';
 
 const style = StyleSheet.create({
   progressBarContainer: {
+    marginTop: 20,
     width: '80%',
     height: 10,
     backgroundColor: COLORS.darkGray,
