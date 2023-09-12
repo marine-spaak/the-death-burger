@@ -27,10 +27,19 @@ const style = StyleSheet.create({
   },
 
   nextBtn: {
-    width: 100,
+    width: 150,
     textAlign: 'center',
     backgroundColor: COLORS.darkBlue,
     color: COLORS.lightBlue,
+    padding: 10,
+    marginTop: 25,
+  },
+
+  answerBtn: {
+    width: 150,
+    textAlign: 'center',
+    backgroundColor: COLORS.darkRed,
+    color: COLORS.lightRed,
     padding: 10,
     marginTop: 25,
   },
