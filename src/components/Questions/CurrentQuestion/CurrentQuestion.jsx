@@ -4,7 +4,9 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { images, COLORS, SIZES } from '../../../constants';
 
 import style from '../Questions.style';
-import specificStyle from '../CurrentQuestion/CurrentQuestion.style';
+import specificStyle from './CurrentQuestion.style';
+
+import questionsData from '../../../assets/data/questionsData';
 
 const CurrentQuestion = () => (
   <View>
@@ -25,9 +27,9 @@ const CurrentQuestion = () => (
       />
     </View>
 
-    <View style={style.paragraphContainer}>
-      <Text>
-        Voici la question courante.
+    <View style={specificStyle.questionContainer}>
+      <Text style={specificStyle.questionText}>
+        {questionsData[0].text}
       </Text>
     </View>
   </View>

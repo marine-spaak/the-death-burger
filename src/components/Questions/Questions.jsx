@@ -18,7 +18,7 @@ const Questions = () => {
           source={images.logo}
           style={style.titleLogo}
         />
-        <Text style={style.titleText}>Les Questions</Text>
+        <Text style={style.titleText}>Le Burger de la Mort</Text>
       </View>
 
       <ProgressBar />
@@ -26,11 +26,12 @@ const Questions = () => {
       <CurrentQuestion />
 
       <TouchableOpacity
-        onPress={() => router.back()}
-        style={style.backBtnContainer}
+        onPress={() => {}}
+        style={style.btnContainer}
       >
-        <Text style={style.backBtn}>Retour à l'accueil</Text>
+        <Text style={style.nextBtn}>Question suivante</Text>
       </TouchableOpacity>
+
     </View>
   );
 };

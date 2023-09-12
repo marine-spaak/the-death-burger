@@ -20,19 +20,19 @@ const style = StyleSheet.create({
     height: 100,
   },
 
-  backBtnContainer: {
+  btnContainer: {
     flex: 1,
     alignItems: 'center',
     marginTop: 15,
   },
 
-  backBtn: {
+  nextBtn: {
     width: 100,
     textAlign: 'center',
     backgroundColor: COLORS.darkBlue,
     color: COLORS.lightBlue,
     padding: 10,
-    marginTop: 15,
+    marginTop: 25,
   },
 
   subtitleContainer: {
