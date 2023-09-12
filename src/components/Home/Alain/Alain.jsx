@@ -1,5 +1,5 @@
 import {
-  View, Text, TouchableOpacity, Image,
+  View, Text, TouchableOpacity, Image, Linking,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { images, COLORS, SIZES } from '../../../constants';
@@ -37,7 +37,9 @@ const Others = () => (
 
         <TouchableOpacity
           style={specificStyle.alainContactBtn}
-          onPress={() => {}}
+          onPress={() => {
+            Linking.openURL('https://artistes-productions.com/2019/08/07/contacter-alain-chabat-l-ecrire-a-alain-chabat/');
+          }}
         >
           <Text
             style={specificStyle.alainContactText}
