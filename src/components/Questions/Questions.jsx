@@ -19,7 +19,7 @@ const Questions = () => {
   };
 
   const handlePressOnAnswersBtn = () => {
-    router.push('/answer');
+    router.push('/home/answer');
   };
 
   return (

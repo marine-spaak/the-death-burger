@@ -25,7 +25,7 @@ const Play = () => (
         Alors allez-y !
       </Text>
 
-      <Link href="/question" style={specificStyle.playBtnContainer}>
+      <Link href="/home/question" style={specificStyle.playBtnContainer}>
         <Ionicons
           name="play-circle"
           size={70}
